@@ -68,7 +68,7 @@ export default function Footer() {
               className="text-xs font-black tracking-[0.2em] text-white"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              OLYMPOLE
+              EN PASSANT
             </div>
             <div className="text-[0.6rem] font-bold tracking-[0.18em]" style={{ color: "#00e5ff" }}>
               CHESS

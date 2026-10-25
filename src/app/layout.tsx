@@ -23,33 +23,33 @@ const tomoBossa = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Olympole Chess",
-    template: "%s | Olympole Chess",
+    default: "En Passant",
+    template: "%s | En Passant",
   },
   description:
-    "Olympole Chess Tournament — Mind sport inside a global cyber-stadium. Where athletics, strategy, and digital culture collide.",
+    "En Passant – 3rd Edition. Rapid 10+2 chess at ENSIA on November 7, 2026. Organised by ESCC.",
   keywords: [
-    "Olympole Chess",
+    "En Passant",
     "chess tournament",
     "Swiss System",
     "Knockout",
     "online chess",
-    "Olympole 2026",
+    "En Passant 2026",
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Olympole Chess",
-    title: "Olympole Chess",
+    siteName: "En Passant",
+    title: "En Passant",
     description:
-      "Mind sport inside a global cyber-stadium. Where athletics, strategy, and digital culture collide.",
+      "En Passant – 3rd Edition · November 7, 2026 · ENSIA · Rapid 10+2.",
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Olympole Chess",
+    title: "En Passant",
     description:
-      "Mind sport inside a global cyber-stadium. Where athletics, strategy, and digital culture collide.",
+      "En Passant – 3rd Edition · November 7, 2026 · ENSIA · Rapid 10+2.",
   },
   robots: { index: true, follow: true },
 };
@@ -61,7 +61,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${tomoBossa.variable}`}>
       <body>
         <Navbar />
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>

@@ -18,11 +18,11 @@ export async function proxy(request: NextRequest) {
   const isAuthenticated = Boolean(session);
 
   if (path === "/login" && isAuthenticated) {
-    url.pathname = "/dashboard";
+    url.pathname = "/admin";
     return NextResponse.redirect(url);
   }
 
-  if (path.startsWith("/dashboard") && !isAuthenticated) {
+  if ((path.startsWith("/dashboard") || path === "/admin" || path.startsWith("/admin/")) && !isAuthenticated) {
     url.pathname = "/login";
     url.searchParams.set("redirect", path);
     return NextResponse.redirect(url);

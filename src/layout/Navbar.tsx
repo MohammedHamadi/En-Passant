@@ -7,8 +7,9 @@ import { useState, useEffect, useRef } from "react";
 
 const navItems = [
   { name: "Home",        href: "/" },
-  { name: "Schedule",    href: "/games" },
-  { name: "Leaderboard", href: "/leaderboard" },
+  { name: "My match", href: "/me" },
+  { name: "Games", href: "/games" },
+  { name: "Leaderboard", href: "/standings" },
 ];
 
 export default function Navbar() {
@@ -90,7 +91,7 @@ export default function Navbar() {
               className="text-[0.95rem] font-black tracking-[0.2em] text-white"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              OLYMPOLE
+              EN PASSANT
             </div>
             <div
               className="text-[0.7rem] font-bold tracking-[0.18em]"
@@ -132,7 +133,7 @@ export default function Navbar() {
         {/* Desktop Dashboard Button */}
         {isAuthenticated && (
           <Link
-            href="/dashboard"
+            href="/admin"
             className="ml-auto hidden md:inline-flex items-center rounded-xl border px-4 py-2 text-xs font-black tracking-[0.1em] uppercase transition-all"
             style={{
               borderColor: "rgba(0,229,255,0.3)",
@@ -192,7 +193,7 @@ export default function Navbar() {
                 ))}
                 {isAuthenticated && (
                   <Link
-                    href="/dashboard"
+                    href="/admin"
                     onClick={() => setMobileOpen(false)}
                     className="mt-1 block rounded-xl px-4 py-3 text-sm font-semibold tracking-[0.08em] transition-colors hover:bg-cyan-300/10"
                     style={{

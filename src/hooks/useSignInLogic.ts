@@ -4,7 +4,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 export function useSignInLogic() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const redirectPath = searchParams.get("redirect") || "/dashboard";
+  const requestedPath = searchParams.get("redirect") || "/admin";
+  const redirectPath = requestedPath.startsWith("/") && !requestedPath.startsWith("//") ? requestedPath : "/admin";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

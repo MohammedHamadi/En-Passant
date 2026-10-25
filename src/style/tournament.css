@@ -1,0 +1,347 @@
+.ep-shell {
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 20px 80px;
+  color: #f5f2e8;
+  font-family: var(--font-inter), sans-serif
+}
+
+.ep-narrow {
+  max-width: 820px
+}
+
+.ep-shell h1 {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1.1;
+  margin: 12px 0 24px
+}
+
+.ep-shell h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 14px
+}
+
+.ep-shell p {
+  line-height: 1.65
+}
+
+.ep-kicker {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: #eac360
+}
+
+.ep-lead {
+  font-size: 1.1rem;
+  color: #c7cbd2;
+  margin-bottom: 32px
+}
+
+.ep-card {
+  background: #101a30;
+  border: 1px solid #38415a;
+  border-radius: 18px;
+  padding: 24px;
+  margin: 18px 0
+}
+
+.ep-form {
+  display: grid;
+  gap: 20px
+}
+
+.ep-shell fieldset {
+  border: 1px solid #3d465a;
+  border-radius: 12px;
+  padding: 18px;
+  min-width: 0
+}
+
+.ep-shell legend {
+  padding: 0 8px;
+  color: #eac360;
+  font-weight: 600
+}
+
+.ep-shell label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: .9rem
+}
+
+.ep-shell input,
+.ep-shell select,
+.ep-shell textarea {
+  border: 1px solid #5a657b;
+  border-radius: 8px;
+  background: #081020;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  min-height: 46px
+}
+
+.ep-shell input:focus-visible,
+.ep-shell select:focus-visible,
+.ep-shell textarea:focus-visible,
+.ep-shell button:focus-visible,
+.ep-shell a:focus-visible {
+  outline: 3px solid #eac360;
+  outline-offset: 3px
+}
+
+.ep-shell .ep-check {
+  flex-direction: row;
+  align-items: center
+}
+
+.ep-shell .ep-check input {
+  width: 20px;
+  min-height: 20px
+}
+
+.ep-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px
+}
+
+.ep-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.ep-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0
+}
+
+.ep-button,
+.ep-secondary,
+.ep-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: .9rem;
+  cursor: pointer
+}
+
+.ep-button {
+  background: #eac360;
+  color: #101522
+}
+
+.ep-secondary {
+  background: #23324c;
+  color: #f5f2e8;
+  border: 1px solid #53627b
+}
+
+.ep-danger {
+  background: #622735;
+  color: #fff;
+  border: 1px solid #b86979
+}
+
+.ep-shell button:disabled {
+  opacity: .45;
+  cursor: not-allowed
+}
+
+.ep-shell a {
+  text-decoration: underline;
+  text-underline-offset: 4px
+}
+
+.ep-shell a.ep-button {
+  text-decoration: none
+}
+
+.ep-error {
+  padding: 14px;
+  border: 1px solid #e9a0a0;
+  border-radius: 10px;
+  background: #421f30;
+  color: #ffdada;
+  margin: 16px 0
+}
+
+.ep-banner {
+  padding: 16px;
+  border-left: 4px solid #eac360;
+  background: #242b34;
+  margin: 20px 0
+}
+
+.ep-confirmation {
+  text-align: center
+}
+
+.ep-code {
+  display: block;
+  font-size: 5rem;
+  letter-spacing: .15em;
+  color: #eac360;
+  padding: 12px
+}
+
+.ep-code-input {
+  font-size: 2rem;
+  letter-spacing: .25em;
+  text-align: center
+}
+
+.ep-match {
+  text-align: center
+}
+
+.ep-table-number {
+  font-size: clamp(5rem, 20vw, 8rem);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #eac360
+}
+
+.ep-colour {
+  font-size: 1.5rem
+}
+
+.ep-stat {
+  font-size: 2.7rem;
+  color: #eac360
+}
+
+.ep-table-wrap {
+  overflow-x: auto;
+  max-height: 75vh
+}
+
+.ep-shell table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap
+}
+
+.ep-shell th {
+  position: sticky;
+  top: 0;
+  background: #172139;
+  text-align: left;
+  color: #eac360;
+  font-size: .78rem;
+  text-transform: uppercase;
+  z-index: 1
+}
+
+.ep-shell td,
+.ep-shell th {
+  padding: 14px 12px;
+  border-bottom: 1px solid #334059
+}
+
+.ep-shell tr.ep-self {
+  background: #453d25
+}
+
+.ep-shell tr.ep-podium {
+  background: #202a3a
+}
+
+.ep-chip {
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid #6b7486;
+  border-radius: 6px;
+  margin: 2px;
+  font-size: .8rem
+}
+
+.ep-chip-white {
+  background: #eee;
+  color: #111
+}
+
+.ep-chip-black {
+  background: #05080e;
+  color: #fff
+}
+
+.ep-shell details {
+  margin: 16px 0
+}
+
+.ep-shell summary {
+  cursor: pointer;
+  padding: 10px 0;
+  color: #eac360
+}
+
+.ep-shell small {
+  color: #c5cbd6
+}
+
+.ep-toolbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  margin: 20px 0
+}
+
+.ep-moving {
+  transition: background-color .3s, transform .3s
+}
+
+.ep-shell pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: .75rem
+}
+
+.ep-shell .ep-inline-field {
+  max-width: 120px
+}
+
+@media(max-width:600px) {
+  .ep-shell {
+    padding: 28px 14px 60px
+  }
+
+  .ep-card {
+    padding: 18px
+  }
+
+  .ep-toolbar {
+    grid-template-columns: 1fr
+  }
+
+  .ep-shell th,
+  .ep-shell td {
+    padding: 12px 8px
+  }
+
+  .ep-actions button {
+    flex-grow: 1
+  }
+
+  .ep-code {
+    font-size: 3.5rem
+  }
+
+  .ep-shell .ep-grid {
+    grid-template-columns: 1fr
+  }
+}

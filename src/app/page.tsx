@@ -10,7 +10,7 @@ const INFO_CARDS = [
     id: "date",
     icon: Calendar,
     label: "DATE",
-    lines: ["May 2, 2026", "Single Day Event"],
+    lines: ["November 7, 2026", "Single Day Event"],
   },
   {
     id: "category",
@@ -22,13 +22,13 @@ const INFO_CARDS = [
     id: "format",
     icon: Swords,
     label: "FORMAT",
-    lines: ["Swiss System", "+ Knockout", "Online"],
+    lines: ["Swiss System", "+ Knockout", "ENSIA hall"],
   },
   {
     id: "platform",
     icon: Monitor,
     label: "PLATFORM",
-    lines: ["Olympole System", "Accounts, Pairings", "& Live Tracking"],
+    lines: ["En Passant", "Player codes", "Pairings & Standings"],
   },
 ];
 
@@ -38,7 +38,7 @@ const RULES = [
     id: "time-control",
     icon: Clock,
     label: "TIME CONTROL",
-    value: "10 Minutes + 5 Seconds increment per move",
+    value: "10 minutes + 2 seconds increment per move",
   },
   {
     id: "format-rule",
@@ -72,7 +72,7 @@ export default function ChessLandingPage() {
         <div className="absolute inset-0 -z-10">
           <Image
             src="/images/backgrounds/background.avif"
-            alt="Olympole Chess cyber-stadium background"
+            alt="En Passant cyber-stadium background"
             fill
             priority
             className="object-cover object-center"
@@ -102,7 +102,7 @@ export default function ChessLandingPage() {
           <div className="animate-float mb-2">
             <Image
               src="/images/brand/fire.webp"
-              alt="Olympole flame"
+              alt="ESCC flame"
               width={200}
               height={240}
               priority
@@ -111,7 +111,7 @@ export default function ChessLandingPage() {
           </div>
           <Image
             src="/images/brand/circles.webp"
-            alt="Olympole rings"
+            alt="ESCC rings"
             width={200}
             height={110}
             className="mx-auto mb-6 h-auto w-20 md:w-24 lg:w-28"
@@ -129,7 +129,7 @@ export default function ChessLandingPage() {
                 textShadow: "0 0 60px rgba(0,229,255,0.25)",
               }}
             >
-              OLYMPOLE
+              EN PASSANT
             </span>
             <span
               className="block text-4xl md:text-6xl lg:text-7xl"
@@ -146,13 +146,13 @@ export default function ChessLandingPage() {
           <p
             className="mt-5 text-lg md:text-xl font-semibold text-white/90"
           >
-            Mind sport inside a global cyber-stadium
+            3rd Edition · Rapid Chess Tournament
           </p>
           <p
             className="mt-1 text-sm md:text-base font-medium"
             style={{ color: "#00e5ff" }}
           >
-            Where athletics, strategy, and digital culture collide.
+            November 7, 2026 · ENSIA hall · 09:00
           </p>
         </div>
 
@@ -285,7 +285,7 @@ export default function ChessLandingPage() {
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 
             <Link
-              href="/leaderboard"
+              href="/standings"
               id="cta-leaderboard"
               className="inline-flex h-13 w-64 items-center justify-center rounded-full text-base font-bold tracking-widest transition-all duration-200 hover:scale-[1.03] hover:bg-white/10"
               style={{
@@ -293,7 +293,7 @@ export default function ChessLandingPage() {
                 color: "rgba(255,255,255,0.75)",
               }}
             >
-              LEADERBOARD
+              VIEW STANDINGS
             </Link>
           </div>
         </div>
